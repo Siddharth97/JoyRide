@@ -1,0 +1,33 @@
+<ion-content padding>
+    <h2>Description</h2>
+    <ion-list>
+      <ion-item>
+        Name: {{ username }} 
+         </ion-item>
+         <ion-item>
+          Location:  {{startlocation}}-{{endlocation}}
+          
+            </ion-item>
+            <ion-item>
+                Time: {{starttime}}
+              </ion-item>
+              <ion-item>
+              Price: {{price}}
+                </ion-item>
+                <ion-item>
+                   Seats: {{seats}}
+                      </ion-item>
+    </ion-list>
+ <form (submit)="doConfirm()">
+
+    <div padding>
+      <button ion-button color="primary" block>CONFIRM</button>
+
+    </div>
+
+ 
+  </form>
+<div padding>
+  <button ion-button (click)="cancel()" color="primary" block>CANCEL</button>
+</div>
+</ion-content>

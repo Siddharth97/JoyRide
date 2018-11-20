@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Find Trip
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+    <div #map style="height: 400px; width: 100%;"></div>
+  <form id="findTrip-form5">
+    <ion-searchbar placeholder="Toronto" name="from" id="findTrip-search3"></ion-searchbar>
+    <ion-searchbar placeholder="Ottawa" name="to" id="findTrip-search4"></ion-searchbar>
+    
+    
+    <ion-item>
+      <ion-label>Date/Time</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY HH:mm"></ion-datetime>
+    </ion-item>
+    <ion-item id="findTrip-select1">
+      <ion-label>
+        Number of Seats
+      </ion-label>
+      <ion-select name="numberOfSeats">
+        <ion-option>
+          1
+        </ion-option>
+        <ion-option>
+          2
+        </ion-option>
+        <ion-option>
+          3
+        </ion-option>
+        <ion-option>
+          4
+        </ion-option>
+      </ion-select>
+    </ion-item>
+  </form>
+  <button id="findTrip-button5" ion-button color="positive" block on-click="goToCameraTabDefaultPage()">
+    Find Trip
+  </button>
+</ion-content>

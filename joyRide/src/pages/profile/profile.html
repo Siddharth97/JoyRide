@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page13">
+  <div style="background-color:#e8ebef;text-align:center;">
+    <ion-img [width]="200" [height]="200" src="assets/img/739462e9754814.jpg"></ion-img>
+
+  </div>
+  <form id="profile-form8">
+    <ion-item id="profile-textarea2">
+        Name : Siddharth <br/>
+        Address :  100 King St, Toronto, ON, CA 
+    </ion-item>
+  </form>
+  <div padding>
+      <button ion-button (click)="goBackMain()" color="primary" block>Go Back To Main</button>
+    </div>
+</ion-content>

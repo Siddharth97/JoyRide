@@ -1,0 +1,7 @@
+{
+  "name": "JoyRide",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

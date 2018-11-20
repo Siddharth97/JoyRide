@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Trip History
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+  <ion-content padding id="page12">
+    <h2>Trip History</h2>
+    <ion-list>
+        <ion-item *ngFor="let post of postList">
+        {{ post.username }}  {{ post.startlocationdh }}
+        <button ion-button (click)="seeFullHistory()" outline item-right>See Full</button>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button ion-button (click)="goBackMain()" color="primary" block>Go Back To Main</button>
+      </div>
+    </ion-content>

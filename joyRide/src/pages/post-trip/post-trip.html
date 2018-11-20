@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Post Trip
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page7">
+    <div #mapPost style="height: 400px; width: 100%;"></div>
+  <form [formGroup]="postTripFormGroup" id="postTrip-form3">
+    From : <ion-searchbar placeholder="Toronto" formControlName="from" name="from" id="postTrip-search1"></ion-searchbar>
+    To : <ion-searchbar placeholder="Ottawa" formControlName="to" name="to" id="postTrip-search2" value="Ottawa"></ion-searchbar>
+    <ion-item>
+      <ion-label>Date/Time</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY HH:mm" formControlName="date"></ion-datetime>
+    </ion-item>
+    <ion-item id="postTrip-range1">
+      <ion-label>Price</ion-label>
+      <ion-input type="text" placeholder="" formControlName="price" name="price"></ion-input>
+    </ion-item>
+    <ion-item id="postTrip-input9">
+      <ion-label>
+        Description
+      </ion-label>
+      <ion-textarea formControlName="desc" rows="3" placeholder="Start at 30-Sep-2018 at 8 AM and reach around 30-Sep-2018 at 11 AM"> </ion-textarea>
+    </ion-item>
+    <ion-item id="postTrip-toggle1">
+      <ion-label>
+        Recurring
+      </ion-label>
+      <ion-toggle color="positive" checked="false"></ion-toggle>
+    </ion-item>
+  </form>
+  <button id="postTrip-button4" ion-button color="positive" block on-click="goToCameraTabDefaultPage()">
+    Post Trip
+  </button>
+</ion-content>

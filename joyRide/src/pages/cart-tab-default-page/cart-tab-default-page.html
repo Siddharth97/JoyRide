@@ -1,0 +1,15 @@
+
+
+<ion-content padding>
+  <h2>Posts</h2>
+  <div padding>
+    <button ion-button (click)="findTrip()" color="primary" block>Re-Enter Route</button>
+  
+  </div>
+  <ion-list>
+      <ion-item *ngFor="let post of postList">
+      {{ post.username }} 
+      <button ion-select (click)="seeDescription(post.username)" outline item-right>Select</button>
+      </ion-item>
+  </ion-list>
+  </ion-content>
